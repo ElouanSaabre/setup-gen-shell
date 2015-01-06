@@ -1,5 +1,3 @@
-/*
-
 The MIT License (MIT)
 
 Copyright (c) 2015 Saabre
@@ -21,24 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
- */
-
-package com.saabre.setup.console.base;
-
-public class ControllerListener {
-    
-    // -- Attributes --
-    
-    protected ControllerOutput output = new ControllerOutput();
-    
-    // -- Output class --
-    
-    public static class ControllerOutput extends Output
-    {
-        public Output.Channel op = new Output.Info();
-        public Output.Channel subOp = new Output.Operation();
-        public Output.Channel title = new Output.Title();
-        public Output.Channel error = new Output.Error();
-    }    
-}
